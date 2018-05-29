@@ -1,7 +1,11 @@
 langhage: node_js
 node_js:
-  - '10.2.1'
-install:
+  - "10.2.1"
+before_script:
+  - npm install -g mocha
   - npm install
 script:
   - npm run test
+cache:
+  directories:
+    - "node_modules"
