@@ -1,1 +1,5 @@
 langhage: node_js
+node_js:
+  - '10.2.1'
+
+script: npm test
